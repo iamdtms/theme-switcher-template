@@ -1,2 +1,2 @@
-body{background-color:var(--bg-color)}.container{display:-ms-grid;display:grid;text-align:right}.container .btn-toggle{text-decoration:none;border-radius:0 0 0 1.5rem;position:absolute;display:inline-block;right:0;top:0;background-color:var(--color);padding:.25rem .25rem .5rem .5rem}
+body{background-color:var(--bg-color);color:var(--color)}.container{display:-ms-grid;display:grid;text-align:right}.container .btn-toggle{text-decoration:none;border-radius:0 0 0 1.5rem;position:absolute;display:inline-block;right:0;top:0;background-color:var(--color);padding:.25rem .25rem .5rem .5rem}.container h1{color:inherit;text-align:left;padding:0 1rem}
 /*# sourceMappingURL=style.css.map */
