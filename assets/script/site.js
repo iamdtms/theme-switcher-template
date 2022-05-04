@@ -7,12 +7,12 @@ var lightMedia = document.querySelector('[media="(prefers-color-scheme: light)"]
 var state = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
 function setLightState() {
-    style.setAttribute("href", "/assets/style/light-theme.min.css");
+    style.setAttribute("href", "assets/style/light-theme.min.css");
     darkMedia.setAttribute("media", "prefers-color-scheme: light)");
 }
 
 function setDarkState() {
-    style.setAttribute("href", "/assets/style/dark-theme.min.css");
+    style.setAttribute("href", "assets/style/dark-theme.min.css");
     lightMedia.setAttribute("media", "prefers-color-scheme: dark)");
 }
 
@@ -32,17 +32,13 @@ function init() {
 
 window.onload = init;
 
-document.getElementById("decor").style.display = "block";
-
 toggleBtn.addEventListener("click", function (event) {
     if (state) {
-        console.log('state in: ' + state);
         setDarkState();
         toggleBtn.innerHTML = '☀️'
         toggleBtn.title = 'Turn lights on';
         state = false;
     } else {
-        console.log('state in: ' + state);
         setLightState();
         toggleBtn.innerHTML = '🌙';
         toggleBtn.title = 'Turn lights off'; 
