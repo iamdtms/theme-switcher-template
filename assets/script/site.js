@@ -22,22 +22,20 @@ function setDarkState() {
     state = false;
 }
 
-function init() {
-    if (state) {
-        setDarkState();
-    } else {
-        setLightState(); 
-    }
+function setup() {
+  if (state) {
+    setDarkState();
+  } else {
+    setLightState(); 
+  }
 }
+
+function init() { setup() }
 
 window.onload = init;
 
 toggleBtn.addEventListener("click", function (event) {
-    if (state) {
-        setDarkState();
-    } else {
-        setLightState();
-    }
+    setup();
     location.reload;
     event.preventDefault();
 });
