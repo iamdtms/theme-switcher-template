@@ -12,7 +12,7 @@ function setLightState() {
     //darkMedia.setAttribute("media", "prefers-color-scheme: light)");
     toggleBtn.innerHTML = '🌙';
     toggleBtn.title = 'Turn lights off';
-    themeColor.content='#010101';
+    themeColor.content='#fefefe';
     state = true;
 }
 
@@ -21,7 +21,7 @@ function setDarkState() {
     //lightMedia.setAttribute("media", "prefers-color-scheme: dark)");
     toggleBtn.innerHTML = '☀️'
     toggleBtn.title = 'Turn lights on';
-    themeColor.content='#fefefe';
+    themeColor.content='#010101';
     state = false;
 }
 
