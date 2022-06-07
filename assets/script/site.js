@@ -1,6 +1,7 @@
 'use strict';
 
 var toggleBtn = document.querySelector(".btn-toggle");
+var themeColor = document.querySelector('[name=theme-color]');
 var style = document.getElementById('color-scheme');
 var darkMedia = document.querySelector('[media="(prefers-color-scheme: dark)"]');
 var lightMedia = document.querySelector('[media="(prefers-color-scheme: light)"]');
@@ -11,6 +12,7 @@ function setLightState() {
     darkMedia.setAttribute("media", "prefers-color-scheme: light)");
     toggleBtn.innerHTML = '🌙';
     toggleBtn.title = 'Turn lights off';
+    themeColor.content='#010101';
     state = true;
 }
 
@@ -19,6 +21,7 @@ function setDarkState() {
     lightMedia.setAttribute("media", "prefers-color-scheme: dark)");
     toggleBtn.innerHTML = '☀️'
     toggleBtn.title = 'Turn lights on';
+    themeColor.content='#fefefe';
     state = false;
 }
 
@@ -30,9 +33,7 @@ function setup() {
   }
 }
 
-function init() { setup() }
-
-window.onload = init;
+window.onload = setup();
 
 toggleBtn.addEventListener("click", function (event) {
     setup();
