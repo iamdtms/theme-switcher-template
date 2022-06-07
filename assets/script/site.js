@@ -9,7 +9,7 @@ var state = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
 function setLightState() {
     style.setAttribute("href", "assets/style/light-theme.min.css");
-    darkMedia.setAttribute("media", "prefers-color-scheme: light)");
+    //darkMedia.setAttribute("media", "prefers-color-scheme: light)");
     toggleBtn.innerHTML = '🌙';
     toggleBtn.title = 'Turn lights off';
     themeColor.content='#010101';
@@ -18,7 +18,7 @@ function setLightState() {
 
 function setDarkState() {
     style.setAttribute("href", "assets/style/dark-theme.min.css");
-    lightMedia.setAttribute("media", "prefers-color-scheme: dark)");
+    //lightMedia.setAttribute("media", "prefers-color-scheme: dark)");
     toggleBtn.innerHTML = '☀️'
     toggleBtn.title = 'Turn lights on';
     themeColor.content='#fefefe';
